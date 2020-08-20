@@ -33,22 +33,20 @@ namespace _121FeeManagement
             }
             else
             {
-                asb.Append("First Name = " + FirstNameTxt.Text + " Last Name = " + LastNameTxt.Text + " Username = " + UsernameTxt.Text + " Password = " + PasswordTxt.Text);
+                asb.Append("First Name = " + FirstNameTxt.Text + ", Last Name = " + LastNameTxt.Text + ", Username = " + UsernameTxt.Text + ", Password = " + PasswordTxt.Text);
                 File.WriteAllText(mainClass.path + "\\cnt", asb.ToString());
+                UsernameTxt.Text = userName;
+                PasswordTxt.Text = password;
+                if (PasswordTxt.Text != ConfirmPassword.Text)
+                {
+                    MessageBox.Show("Password And Confirm Password Is Not Matched");
+                }
+
                 DialogResult dr = MessageBox.Show("Settings Saved Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 if (dr == DialogResult.OK)
                 {
                     Login log = new Login();
                     mainClass.ShowWindow(log, this, MDI.ActiveForm);
-                }
-                if(userName == "blanck" && password == "opopopopop")
-                {
-                    UsernameTxt.Text = userName;
-                    PasswordTxt.Text = password;
-                }
-                if (PasswordTxt.Text != ConfirmPassword.Text)
-                {
-                    MessageBox.Show("Password And Confirm Password Is Not Matched");
                 }
             }
         }
