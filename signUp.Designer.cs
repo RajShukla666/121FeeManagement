@@ -46,12 +46,16 @@
             this.UsernameErrorLable = new System.Windows.Forms.Label();
             this.PasswordErrorLabe = new System.Windows.Forms.Label();
             this.CPassErrorLable = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ExitBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightCoral;
+            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.SignUpBtn);
             this.panel1.Controls.Add(this.UsernameTxt);
             this.panel1.Controls.Add(this.label6);
@@ -80,6 +84,8 @@
             // 
             this.SignUpBtn.BackColor = System.Drawing.Color.DarkOrange;
             this.SignUpBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SignUpBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.SignUpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignUpBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.SignUpBtn.ForeColor = System.Drawing.Color.Firebrick;
             this.SignUpBtn.Location = new System.Drawing.Point(993, 560);
@@ -195,7 +201,7 @@
             // 
             this.FirstNameErrorLable.AutoSize = true;
             this.FirstNameErrorLable.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstNameErrorLable.ForeColor = System.Drawing.SystemColors.Control;
+            this.FirstNameErrorLable.ForeColor = System.Drawing.Color.Red;
             this.FirstNameErrorLable.Location = new System.Drawing.Point(1112, 277);
             this.FirstNameErrorLable.Name = "FirstNameErrorLable";
             this.FirstNameErrorLable.Size = new System.Drawing.Size(34, 46);
@@ -207,7 +213,7 @@
             // 
             this.LastNameErrorLable.AutoSize = true;
             this.LastNameErrorLable.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastNameErrorLable.ForeColor = System.Drawing.SystemColors.Control;
+            this.LastNameErrorLable.ForeColor = System.Drawing.Color.Red;
             this.LastNameErrorLable.Location = new System.Drawing.Point(1112, 333);
             this.LastNameErrorLable.Name = "LastNameErrorLable";
             this.LastNameErrorLable.Size = new System.Drawing.Size(34, 46);
@@ -219,7 +225,7 @@
             // 
             this.UsernameErrorLable.AutoSize = true;
             this.UsernameErrorLable.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameErrorLable.ForeColor = System.Drawing.SystemColors.Control;
+            this.UsernameErrorLable.ForeColor = System.Drawing.Color.Red;
             this.UsernameErrorLable.Location = new System.Drawing.Point(1112, 389);
             this.UsernameErrorLable.Name = "UsernameErrorLable";
             this.UsernameErrorLable.Size = new System.Drawing.Size(34, 46);
@@ -231,7 +237,7 @@
             // 
             this.PasswordErrorLabe.AutoSize = true;
             this.PasswordErrorLabe.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordErrorLabe.ForeColor = System.Drawing.SystemColors.Control;
+            this.PasswordErrorLabe.ForeColor = System.Drawing.Color.Red;
             this.PasswordErrorLabe.Location = new System.Drawing.Point(1112, 445);
             this.PasswordErrorLabe.Name = "PasswordErrorLabe";
             this.PasswordErrorLabe.Size = new System.Drawing.Size(34, 46);
@@ -243,13 +249,37 @@
             // 
             this.CPassErrorLable.AutoSize = true;
             this.CPassErrorLable.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CPassErrorLable.ForeColor = System.Drawing.SystemColors.Control;
+            this.CPassErrorLable.ForeColor = System.Drawing.Color.Red;
             this.CPassErrorLable.Location = new System.Drawing.Point(1112, 501);
             this.CPassErrorLable.Name = "CPassErrorLable";
             this.CPassErrorLable.Size = new System.Drawing.Size(34, 46);
             this.CPassErrorLable.TabIndex = 18;
             this.CPassErrorLable.Text = "*";
             this.CPassErrorLable.Visible = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel2.Controls.Add(this.ExitBtn);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 705);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1425, 40);
+            this.panel2.TabIndex = 19;
+            // 
+            // ExitBtn
+            // 
+            this.ExitBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.ExitBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ExitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ExitBtn.Location = new System.Drawing.Point(1350, 0);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(75, 40);
+            this.ExitBtn.TabIndex = 0;
+            this.ExitBtn.Text = "Exit";
+            this.ExitBtn.UseVisualStyleBackColor = false;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // signUp
             // 
@@ -264,6 +294,7 @@
             this.Load += new System.EventHandler(this.signUp_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -288,5 +319,7 @@
         private System.Windows.Forms.Label UsernameErrorLable;
         private System.Windows.Forms.Label PasswordErrorLabe;
         private System.Windows.Forms.Label CPassErrorLable;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button ExitBtn;
     }
 }

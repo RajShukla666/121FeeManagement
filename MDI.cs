@@ -21,7 +21,7 @@ namespace _121FeeManagement
         private void MDI_Load(object sender, EventArgs e)
         {
             string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            if (File.Exists(path + "\\Cnt"))
+            if (File.Exists(path + "\\Cnt.txt"))
             {
                 Login obj = new Login();
                 obj.MdiParent = this;

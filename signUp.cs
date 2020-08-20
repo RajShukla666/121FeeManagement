@@ -20,6 +20,8 @@ namespace _121FeeManagement
         public static string userName = "blanck";
         public static string password = "opopopopop";
         StringBuilder asb = new StringBuilder();
+        StringBuilder uasb = new StringBuilder();
+        StringBuilder pasb = new StringBuilder();
         private void button1_Click(object sender, EventArgs e)
         {
             if (UsernameTxt.Text == "") { UsernameErrorLable.Visible = true; } else { UsernameErrorLable.Visible = false; }
@@ -34,9 +36,13 @@ namespace _121FeeManagement
             else
             {
                 asb.Append("First Name = " + FirstNameTxt.Text + ", Last Name = " + LastNameTxt.Text + ", Username = " + UsernameTxt.Text + ", Password = " + PasswordTxt.Text);
-                File.WriteAllText(mainClass.path + "\\cnt", asb.ToString());
-                userName = UsernameTxt.Text;
-                password = PasswordTxt.Text;
+                File.WriteAllText(mainClass.path + "\\cnt.txt", asb.ToString());
+                uasb.Append(UsernameTxt.Text);
+                File.WriteAllText(mainClass.path + "\\username.txt", uasb.ToString());
+                pasb.Append(PasswordTxt.Text);
+                File.WriteAllText(mainClass.path + "\\password.txt", pasb.ToString());
+                // userName = UsernameTxt.Text;
+                //password = PasswordTxt.Text;
                 if (PasswordTxt.Text != ConfirmPassword.Text)
                 {
                     MessageBox.Show("Password And Confirm Password Is Not Matched");
@@ -54,6 +60,11 @@ namespace _121FeeManagement
         private void signUp_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

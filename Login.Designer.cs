@@ -37,12 +37,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.UsernameErrorLable = new System.Windows.Forms.Label();
             this.PasswordErrorLabe = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ExitBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.LogInBtn);
@@ -85,6 +89,7 @@
             // 
             this.LogInBtn.BackColor = System.Drawing.Color.DarkOrange;
             this.LogInBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LogInBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogInBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.LogInBtn.ForeColor = System.Drawing.Color.MediumSpringGreen;
             this.LogInBtn.Location = new System.Drawing.Point(988, 495);
@@ -146,6 +151,31 @@
             this.PasswordErrorLabe.Text = "*";
             this.PasswordErrorLabe.Visible = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.SpringGreen;
+            this.panel2.Controls.Add(this.ExitBtn);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 704);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1411, 45);
+            this.panel2.TabIndex = 27;
+            // 
+            // ExitBtn
+            // 
+            this.ExitBtn.BackColor = System.Drawing.SystemColors.Desktop;
+            this.ExitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExitBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.ExitBtn.Location = new System.Drawing.Point(1336, 0);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(75, 45);
+            this.ExitBtn.TabIndex = 0;
+            this.ExitBtn.Text = "Exit";
+            this.ExitBtn.UseVisualStyleBackColor = false;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -158,6 +188,7 @@
             this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -173,5 +204,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label UsernameErrorLable;
         private System.Windows.Forms.Label PasswordErrorLabe;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button ExitBtn;
     }
 }

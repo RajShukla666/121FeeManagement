@@ -54,5 +54,10 @@ namespace _121FeeManagement
         {
             if (PasswordTxt.Text == "") { PasswordErrorLabe.Visible = true; } else { PasswordErrorLabe.Visible = false; }
         }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
