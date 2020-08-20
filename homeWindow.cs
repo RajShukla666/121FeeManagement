@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _121FeeManagement
 {
-    public partial class HomeScreen : Form
+    public partial class homeWindow : Form
     {
-        public HomeScreen()
+        public homeWindow()
         {
             InitializeComponent();
         }

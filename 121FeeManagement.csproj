@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HomeScreen.cs">
+    <Compile Include="homeWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomeScreen.Designer.cs">
-      <DependentUpon>HomeScreen.cs</DependentUpon>
+    <Compile Include="homeWindow.Designer.cs">
+      <DependentUpon>homeWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="LoadScreen.cs">
       <SubType>Form</SubType>

@@ -21,9 +21,22 @@ namespace _121FeeManagement
         {
             if (UsernameTxt.Text == "") { UsernameErrorLable.Visible = true; } else { UsernameErrorLable.Visible = false; }
             if (PasswordTxt.Text == "") { PasswordErrorLabe.Visible = true; } else { PasswordErrorLabe.Visible = false; }
-            if(UsernameTxt.Text != signUp.userName && PasswordTxt.Text != signUp.password)
+            if (UsernameErrorLable.Visible || PasswordErrorLabe.Visible)
             {
-
+                MessageBox.Show("Feilds with * are mendatory");
+            }
+            else if (UsernameTxt.Text != signUp.userName)
+            {
+                MessageBox.Show("Wrong UserName");
+            }
+            else if (PasswordTxt.Text != signUp.password)
+            {
+                MessageBox.Show("Wrong Password");
+            }
+            if(UsernameTxt.Text == signUp.userName && PasswordTxt.Text == signUp.password)
+            {
+                homeWindow hom = new homeWindow();
+                mainClass.ShowWindow(hom, this, MDI.ActiveForm);
             }
         }
 
