@@ -1,0 +1,13 @@
+C:\Main Projects\121FeeManagement\bin\Debug\121FeeManagement.exe.config
+C:\Main Projects\121FeeManagement\bin\Debug\121FeeManagement.exe
+C:\Main Projects\121FeeManagement\bin\Debug\121FeeManagement.pdb
+C:\Main Projects\121FeeManagement\obj\Debug\121FeeManagement.csprojAssemblyReference.cache
+C:\Main Projects\121FeeManagement\obj\Debug\_121FeeManagement.Mode1.resources
+C:\Main Projects\121FeeManagement\obj\Debug\_121FeeManagement.Properties.Resources.resources
+C:\Main Projects\121FeeManagement\obj\Debug\121FeeManagement.csproj.GenerateResource.cache
+C:\Main Projects\121FeeManagement\obj\Debug\121FeeManagement.exe
+C:\Main Projects\121FeeManagement\obj\Debug\121FeeManagement.pdb
+C:\Main Projects\121FeeManagement\obj\Debug\_121FeeManagement.MDI.resources
+C:\Main Projects\121FeeManagement\obj\Debug\_121FeeManagement.signUp.resources
+C:\Main Projects\121FeeManagement\obj\Debug\_121FeeManagement.Login.resources
+C:\Main Projects\121FeeManagement\obj\Debug\_121FeeManagement.LoadScreen.resources
