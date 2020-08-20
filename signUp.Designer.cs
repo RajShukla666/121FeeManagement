@@ -51,7 +51,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Brown;
+            this.panel1.BackColor = System.Drawing.Color.LightCoral;
             this.panel1.Controls.Add(this.SignUpBtn);
             this.panel1.Controls.Add(this.UsernameTxt);
             this.panel1.Controls.Add(this.label6);

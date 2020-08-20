@@ -35,8 +35,8 @@ namespace _121FeeManagement
             {
                 asb.Append("First Name = " + FirstNameTxt.Text + ", Last Name = " + LastNameTxt.Text + ", Username = " + UsernameTxt.Text + ", Password = " + PasswordTxt.Text);
                 File.WriteAllText(mainClass.path + "\\cnt", asb.ToString());
-                UsernameTxt.Text = userName;
-                PasswordTxt.Text = password;
+                userName = UsernameTxt.Text;
+                password = PasswordTxt.Text;
                 if (PasswordTxt.Text != ConfirmPassword.Text)
                 {
                     MessageBox.Show("Password And Confirm Password Is Not Matched");
